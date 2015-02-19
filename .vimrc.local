@@ -1,0 +1,15 @@
+let g:spf13_keep_trailing_whitespace = 1
+color peaksea
+"let g:syntastic_ignore_files = ['\.py$', 'semanage']
+let g:syntastic_ignore_files = ['\.py$']
+set wrap
+let &colorcolumn=join(range(81,999),",")
+set spell " spell check
+
+" airline options"
+let g:airline#extensions#whitespace#enabled = 0 " it's called a statusline"
+let g:airline_theme = 'light' "color"
+let g:airline#extensions#default#layout = [
+\ [ 'b', 'c' ],
+\ [ 'x', 'z', 'warning' ]
+\ ]
